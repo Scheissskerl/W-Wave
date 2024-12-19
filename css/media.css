@@ -1,0 +1,683 @@
+@media(max-width: 1200px) {
+
+  /* header */
+
+  .header__nav {
+    margin-right: 208px;
+  }
+
+}
+
+@media(width < 1200px) {
+
+  /* header */
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__nav {
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .header__onair {
+    margin-bottom: 20px;
+  }
+
+  /* playlists */
+
+  .playlists__list {
+    gap: 65px;
+    --offsets: 2;
+  }
+
+  /* adversiting */
+
+  .adversiting-content {
+    min-height: 535px;
+  }
+
+  /* about-us */
+
+  .about-us__description-background {
+    background-image: url(../img/dawn.png);
+  }
+
+}
+
+@media(max-width: 1025px) {
+
+  /* broadcasts */
+
+  .broadcasts__list {
+    --offsets: 1;
+    justify-content: flex-end;
+  }
+
+  /* playlist */
+
+  .playlist__card-snippet {
+    opacity: 1;
+  }
+
+  /* footer */
+
+  .footer__logo-wrap {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media(width < 992px) {
+
+  /* header */
+
+  .header-container {
+    padding-bottom: 15px;
+  }
+
+  .header__wrap {
+    align-items: flex-start;
+  }
+
+  .header__content {
+    align-items: normal;
+  }
+
+  .header__nav {
+    margin: 0;
+  }
+
+  .header__nav-menu {
+    display: none;
+  }
+
+  .header__onair {
+    display: none;
+  }
+
+  .header__onair-992 {
+    display: flex;
+  }
+
+  .open {
+    display: flex;
+  }
+
+  .wrap-burger-line {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20px;
+    width: 35px;
+    z-index: 3;
+  }
+
+  .wrap-burger-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .wrap-burger-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--black);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .wrap-burger-line.active:before {
+    top: 50%;
+    background-color: var(--btn-viollet);
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  .wrap-burger-line.active::after {
+    bottom: 50%;
+    background-color: var(--btn-viollet);
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
+  .burger-line {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: var(--black);
+    transition: transform 0.15s ease-in-out;
+  }
+
+  .wrap-burger-line.active .burger-line {
+    transform: scale(0);
+  }
+
+  .header__nav-menu--burger {
+    position: absolute;
+    flex-direction: column;
+    gap: 35px;
+    top: 50px;
+    right: 0;
+    padding: 10px 20px;
+    height: 300px;
+    width: 220px;
+    overflow-y: auto;
+    z-index: 5;
+    background-color: var(--btn-viollet);
+    animation: burgerAnimation 0.5s ease-in-out;
+  }
+
+  .header__menu-link {
+    font-size: 25px;
+    color: var(--white);
+  }
+
+  @keyframes burgerAnimation {
+    0% {
+      right: -25%;
+    }
+
+    100% {
+      right: 0;
+    }
+  }
+
+  /* hero */
+
+  .hero__content-picture {
+    display: none;
+  }
+
+  /* podcasts */
+
+  .podcasts__list {
+    --offsets: 0;
+  }
+
+  /* broadcasts */
+
+  .broadcasts-container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .broadcasts__title {
+    margin-bottom: 60px;
+  }
+
+  .broadcasts__content {
+    flex-direction: column-reverse;
+  }
+
+  .broadcasts__left-part {
+    margin: 0 auto;
+  }
+
+  .broadcasts__list {
+    --offsets: 2;
+  }
+
+  .broadcasts__btn-wrap {
+    padding-left: 77px;
+  }
+
+  .broadcasts__btn-wrap-background {
+    background-position: left bottom 6px;
+  }
+
+  .broadcasts__btn-archive {
+    margin-bottom: 8px;
+  }
+
+  /* guests */
+
+  .guests__list {
+    align-items: center;
+  }
+
+  .guests__card {
+    flex-direction: column;
+    max-width: 540px;
+  }
+
+  .guests__card-content {
+    min-height: 225px;
+  }
+
+  /* playlists */
+
+  .playlists__left-part {
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+  }
+
+  .playlists__list {
+    gap: 40px;
+    --offsets: 1;
+  }
+
+  .playlists__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 325px;
+  }
+
+  .playlists__card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+  }
+
+  .playlists__name-artist {
+    margin-bottom: 6px;
+  }
+
+  .playlists__card-artist-flag {
+    left: 0;
+  }
+
+  /* about-us */
+
+  .about-us__description-background {
+    background-image: none;
+  }
+
+  .about-us__presenters-list {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  /* adversiting */
+
+  .adversiting-content--wave {
+    background-image: none;
+  }
+}
+
+@media(width < 770px) {
+
+  /* broadcasts */
+
+  .broadcasts__list {
+    --offsets: 1;
+  }
+
+  .broadcasts__card {
+    max-width: 330px;
+  }
+
+  .broadcasts__card-content {
+    padding-top: 199px;
+    min-height: 280px;
+  }
+}
+
+@media(width < 768px) {
+
+  /* hero */
+
+  .hero__container {
+    padding-top: 40px;
+  }
+
+  /* podcasts */
+
+  .podcasts-container {
+    padding-bottom: 63px;
+  }
+
+  .podcasts__date {
+    top: 0;
+    bottom: auto;
+  }
+
+  /* broadcasts */
+
+  .broadcasts-container {
+    padding-top: 30px;
+    padding-bottom: 42px;
+  }
+
+  .broadcasts__card-content {
+    padding-top: 150px;
+    min-height: 240px;
+  }
+
+  /* playlists */
+
+  .playlists-container {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
+  .playlists__card {
+    max-width: 235px;
+  }
+
+  /* guests */
+
+  .guests-container {
+    padding-top: 33px;
+    padding-bottom: 45px;
+  }
+
+  /* about us */
+
+  .about-us-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .about-us__presenters-list {
+    row-gap: 50px;
+  }
+
+  .about-us__presenters-img {
+    margin-bottom: 0px;
+  }
+
+  .adversiting-content {
+    min-height: 500px;
+  }
+
+  /* footer */
+
+  .footer__logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media(width < 576px) {
+
+  /* broadcasts */
+
+  .broadcasts__btn-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-inline: auto;
+    padding-left: 85px;
+  }
+
+  .broadcasts__btn-wrap-background {
+    background-image: url(../img/broadcasts-archive-background-320.png);
+  }
+
+  .broadcasts__text {
+    margin-bottom: 7px;
+    max-width: 166px;
+    font-size: 12px;
+  }
+
+  .broadcasts__btn-archive {
+    width: 125px;
+  }
+
+  /* playlist */
+
+  .playlists__list {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+}
+
+@media(width < 553px) {
+
+  /* broadcasts */
+
+  .broadcasts__card-content {
+    padding-top: 120px;
+    min-height: 210px;
+  }
+
+  .broadcasts__card-background--aboutpeopleandbooks {
+    background-image: url(../img/bcrground-aboutpeopleandbooks-320.png);
+  }
+
+  .broadcasts__card-background--graphomania {
+    background-image: url(../img/background-graphomania-320.png);
+  }
+
+  .broadcasts__card-background--notromenottroy {
+    background-image: url(../img/backgound-notromenottroy-320.png);
+  }
+
+  .broadcasts__card-background--polymath {
+    background-image: url(../img/background-polymath-320.png);
+  }
+
+  .broadcasts__card-background--subletiespftheepoch {
+    background-image: url(../img/background-subletiespftheepoch-320.png);
+  }
+
+  .broadcasts__card-background--livingthoughts {
+    background-image: url(../img/background-livingthoughts-320.png);
+  }
+
+  /* guests */
+
+  .guests__card-content {
+    min-height: 265px;
+  }
+
+}
+
+@media(width < 481px) {
+
+  /* broadcasts */
+
+  .broadcasts__card-content {
+    padding-top: 100px;
+    min-height: 190px;
+  }
+
+  /* adversiting */
+
+  .adversiting__btn {
+    width: 270px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media(width < 465px) {
+
+  /* hero */
+
+  .main-title {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .hero__description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    width: 218px;
+    height: 50px;
+  }
+
+  /* podcasts */
+
+  .podcasts__title {
+    font-size: 24px;
+  }
+
+  .podcasts__card-content {
+    padding-top: 146px;
+    padding-left: 16px;
+    padding-bottom: 45px;
+  }
+
+  .podcasts__card-background {
+    background-position: top;
+    background-size: 100%;
+  }
+
+  .podcasts__card-background--europaXIX {
+    background-image: url(../img//podcasts-background-europaXIX-320.jpg);
+  }
+
+  .podcasts__card-background--darktales {
+    background-image: url(../img/podcasts__card-background-darktales-320.png);
+  }
+
+  .podcasts__card-background--psychologist {
+    background-image: url(../img/podcasts__card-background-psychologist-320.png);
+  }
+
+  .podcasts__card-background--peopletoday {
+    background-image: url(../img/podcasts-background-peopletoday-320.jpg);
+  }
+
+  .podcasts__card-background--abouteverything {
+    background-image: url(../img/podcasts-background-abouteverything-320.jpg);
+  }
+
+  .podcasts__card-background--soundsource {
+    background-image: url(../img/podcasts-background-soundsource-320.jpg);
+  }
+
+  .podcasts__card-background--aboutmusic {
+    background-image: url(../img/podcasts-background-aboutmusic-320.jpg);
+  }
+
+  .podcasts__card-background--hug {
+    background-image: url(../img/podcasts__card-background-hug.png);
+  }
+
+  .podcasts__card-background--helloafrica {
+    background-image: url(../img/podcasts-background-helloafrica-320.jpg);
+  }
+
+  .podcasts__card-background--artforboys {
+    background-image: url(../img/podcasts__card-background-artforboys-320.png);
+  }
+
+  .podcasts__card-background--colourphisics {
+    background-image: url(../img/podcasts-background-colourphisics-320.jpg);
+  }
+
+  .podcasts__card-background--rulesofetiquette {
+    background-image: url(../img/podcasts-background-rulesofetiquette-320.jpg);
+  }
+
+  .podcasts__card-background--success {
+    background-image: url(../img/podcasts-background-success-320.png);
+  }
+
+  .podcasts__card-background--keytwist {
+    background-image: url(../img/podcasts-background-keytwist-320.png);
+  }
+
+  .podcasts__card-background--economic {
+    background-image: url(../img/podcasts-background-economic-320.png);
+  }
+
+  .podcasts__card-background--timeforopinions {
+    background-image: url(../img/podcasts-backgrountimeforopinions-320.png);
+  }
+
+  /* footer */
+
+  .footer__list {
+    --offsets: 1;
+  }
+
+}
+
+@media(width < 434px) {
+
+  /* broadcasts */
+
+  .broadcasts__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .broadcasts__card-content {
+    padding-top: 90px;
+    min-height: 165px;
+  }
+
+  .broadcasts__card-title {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .broadcasts__time {
+    font-size: 9px;
+  }
+
+  .broadcasts__card-link {
+    margin-top: auto;
+    font-size: 12px;
+  }
+
+}
+
+@media(width < 429px) {
+
+  /* guests */
+
+  .guests__card-content {
+    min-height: 295px;
+  }
+
+}
+
+@media(width < 392px) {
+
+  /* podcasts */
+
+  .podcasts__card-content {
+    padding-top: 115px;
+  }
+
+  /* guests */
+
+  .guests__card-content {
+    min-height: 370px;
+  }
+
+}
+
+@media(width < 365px) {
+
+  /* broadcasts */
+
+  .broadcasts__card-content {
+    padding-top: 75px;
+    padding-bottom: 10px;
+    min-height: 155px;
+  }
+
+  /* playlist */
+
+  .playlists__name-artist {
+    font-size: 11px;
+  }
+
+  .playlists__card-text {
+    font-size: 10px;
+  }
+
+}
