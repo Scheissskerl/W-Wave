@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="20px" viewBox="0 0 24 20" version="1.1">
+<defs>
+<clipPath id="clip1">
+  <path d="M 0 2 L 24 2 L 24 18 L 0 18 Z M 0 2 "/>
+</clipPath>
+<clipPath id="clip2">
+  <path d="M 1.714844 2.855469 L 22.285156 2.855469 C 23.234375 2.855469 24 3.496094 24 4.285156 L 24 15.714844 C 24 16.503906 23.234375 17.144531 22.285156 17.144531 L 1.714844 17.144531 C 0.765625 17.144531 0 16.503906 0 15.714844 L 0 4.285156 C 0 3.496094 0.765625 2.855469 1.714844 2.855469 Z M 1.714844 2.855469 "/>
+</clipPath>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="14" y1="0" x2="14" y2="20" gradientTransform="matrix(0.857143,0,0,0.714286,0,2.857143)">
+<stop offset="0" style="stop-color:rgb(100%,100%,100%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(94.117647%,94.117647%,94.117647%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="14" y1="0" x2="14" y2="20" gradientTransform="matrix(0.857143,0,0,0.714286,0,2.857143)">
+<stop offset="0" style="stop-color:rgb(94.509804%,25.882353%,27.843137%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(92.941176%,18.431373%,20.784314%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="14" y1="0" x2="14" y2="20" gradientTransform="matrix(0.857143,0,0,0.714286,0,2.857143)">
+<stop offset="0" style="stop-color:rgb(100%,100%,100%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(94.117647%,94.117647%,94.117647%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="14" y1="0" x2="14" y2="20" gradientTransform="matrix(0.857143,0,0,0.714286,0,2.857143)">
+<stop offset="0" style="stop-color:rgb(3.921569%,22.745098%,52.156863%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(1.176471%,16.470588%,40.392157%);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 24 2.855469 L 0 2.855469 L 0 17.144531 L 24 17.144531 Z M 24 2.855469 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 24 2.855469 L 0 2.855469 L 0 17.144531 L 24 17.144531 Z M 24 2.855469 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear2);" d="M 0 11.429688 L 6.855469 11.429688 L 6.855469 17.144531 L 10.285156 17.144531 L 10.285156 11.429688 L 24 11.429688 L 24 8.570312 L 10.285156 8.570312 L 10.285156 2.855469 L 6.855469 2.855469 L 6.855469 8.570312 L 0 8.570312 Z M 0 11.429688 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear3);" d="M 0 10.476562 L 8 10.476562 L 8 17.144531 L 9.144531 17.144531 L 9.144531 10.476562 L 24 10.476562 L 24 9.523438 L 9.144531 9.523438 L 9.144531 2.855469 L 8 2.855469 L 8 9.523438 L 0 9.523438 Z M 0 10.476562 "/>
+</g>
+</g>
+</g>
+</svg>
